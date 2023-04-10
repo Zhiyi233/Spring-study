@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-reflect" />
+        <module name="atguigu-spring" />
+        <module name="spring-com.atguigu.ioc-xml" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="atguigu-spring" target="8" />
+      <module name="spring-com.atguigu.ioc-first" target="8" />
+      <module name="spring-com.atguigu.ioc-xml" target="8" />
+      <module name="spring-reflect" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
