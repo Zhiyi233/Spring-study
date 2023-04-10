@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 获取bean演示-->
+    <bean id="user" class="ioc.xml.User"></bean>
+    <bean id="user1" class="ioc.xml.User"></bean>
+    <!-- 获取接口演示-->
+    <bean id="UserDamImpl" class="ioc.xml.bean.UserDaoImpl"></bean>
+    <bean id="personDaoImpl" class="ioc.xml.bean.PersonDaoImpl"></bean>
+</beans>

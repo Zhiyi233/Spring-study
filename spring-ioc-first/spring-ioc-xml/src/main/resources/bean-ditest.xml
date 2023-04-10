@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        引入外部bean的方式：
+        1. 创建两个类的对象 emp dep
+        2. bean里面使用property引入dept的bean
+     -->
+    <bean id="dept" class="com.atguigu.ioc.xml.ditest.Department">
+        <property name="dname" value="安保部"></property>
+    </bean>
+
+    <bean id="emp" class="com.atguigu.ioc.xml.ditest.Employee">
+        <property name="ename" value="lucy"></property>
+        <property name="age" value="50"></property>
+
+        <!--对象类型属性注入
+        private Department dept;
+        ref = "dept"部门对象名上面那个id="dept"
+        -->
+        <property name="dept" ref = "dept"></property>
+    </bean>
+
+    <!--
+        内部bean
+        方式二
+     -->
+    <bean id="emp2" class="com.atguigu.ioc.xml.ditest.Employee">
+        <property name="ename" value="kevin"></property>
+        <property name="age" value="25"></property>
+
+        <!--内部bean方式
+        就不用ref了直接在里面加一个bean<>
+        -->
+        <property name="dept">
+            <bean id="dept1" class="com.atguigu.ioc.xml.ditest.Department">
+                <property name="dname" value="财务部"></property>
+            </bean>
+        </property>
+    </bean>
+
+    <!--
+        方式三：级联赋值
+     -->
+
+    <bean id="dept3" class="com.atguigu.ioc.xml.ditest.Department">
+        <property name="dname" value="技术部"></property>
+    </bean>
+
+    <bean id="emp3" class="com.atguigu.ioc.xml.ditest.Employee">
+        <property name="ename" value="小智"></property>
+        <property name="age" value="20"></property>
+        <property name="dept" ref="dept3"></property>
+        <property name="dept.dname" value="测试部"></property>
+    </bean>
+
+</beans>
