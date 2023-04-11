@@ -4,14 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 基于set方法完成注入 bname就是setter set后面的名字小写 -->
-<!--    <bean id="book" class="com.atguigu.ioc.xml.di.Book">-->
+<!--    <proxy id="book" class="com.atguigu.ioc.xml.di.Book">-->
 <!--&lt;!&ndash;        <property name="bname" value="前端开发"></property>&ndash;&gt;-->
 <!--&lt;!&ndash;        <property name="author" value="尚硅谷"></property>&ndash;&gt;-->
 <!--        <property name="bname">-->
 <!--            <value><![CDATA[a<b]]></value>-->
 <!--        </property>-->
 <!--&lt;!&ndash;        <property name="bname" value="a &lt; b"/>&ndash;&gt;-->
-<!--    </bean>-->
+<!--    </proxy>-->
 
     <!-- 基于构造器方法完成注入
     constructor-arg标签还有两个属性可以进一步描述构造器参数：

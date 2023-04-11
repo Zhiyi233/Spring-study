@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--根据类型自动装配-->
-<!--    <bean id="userController" class="com.atguigu.ioc.xml.auto.controller.UserController" autowire="byType">-->
-<!--    </bean>-->
-<!--    <bean id="userService" class="com.atguigu.ioc.xml.auto.service.UserServiceImpl" autowire="byType">-->
-<!--    </bean>-->
+<!--    <proxy id="userController" class="com.atguigu.ioc.xml.auto.controller.UserController" autowire="byType">-->
+<!--    </proxy>-->
+<!--    <proxy id="userService" class="com.atguigu.ioc.xml.auto.service.UserServiceImpl" autowire="byType">-->
+<!--    </proxy>-->
     <!---byName-->
     <bean id="userController" class="com.atguigu.ioc.xml.auto.controller.UserController" autowire="byName">
         </bean>
