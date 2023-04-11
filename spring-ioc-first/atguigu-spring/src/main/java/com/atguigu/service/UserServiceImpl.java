@@ -13,6 +13,6 @@ public class UserServiceImpl implements UserService{
     @Override
     public void add() {
         System.out.println("Service....");
-//        userDao.add();
+        userDao.add();
     }
 }
