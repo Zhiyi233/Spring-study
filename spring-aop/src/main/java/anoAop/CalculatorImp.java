@@ -8,6 +8,7 @@ public class CalculatorImp implements Calculator {
     public int add(int i, int j) {
         int result = i+j;
         System.out.println("结果为："+result);
+        //int a = 1/0;
         return result;
     }
 
