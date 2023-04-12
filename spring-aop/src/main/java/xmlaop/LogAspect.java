@@ -1,4 +1,4 @@
-package anoAop;
+package xmlaop;
 
 //切面类
 
@@ -13,44 +13,33 @@ import java.util.Arrays;
 @Component //ioc容器
 public class LogAspect {
 
-    //设置切入点，通知类型
-    //切入点表达式: execution(访问修饰符 方法返回类型 方法所在类的全类名.方法名 参数类型或..表示任意参数)
-    // *()表示任意方法
-    //通知类型:
-    // 前置通知 @Before(value="切入点表达式配置切入点")
-    @Before(value = "execution(public int anoAop.CalculatorImp.*(..))")
+
+    // 前置通知
     public void beforeMethod(JoinPoint joinPoint){
         String name = joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
         System.out.println("Logger--->前置通知，方法名："+name+",参数："+ Arrays.toString(args));//+methodName+",参数："+args);
     }
-    // 后置通知 @After(),同一个包下可以直接使用
-    // @After(value = "pointCut()")
-
-    //不同包要加上路径
-    @After(value = "anoAop.LogAspect.pointCut()")
+    // 后置通知
     public void afterMethod(JoinPoint joinPoint){
         String name = joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
         System.out.println("Logger--->后置通知，方法名："+name+",参数："+ Arrays.toString(args));
     }
 
-    // 返回通知 @AfterReturning()
-    @AfterReturning(value = "execution(public int anoAop.CalculatorImp.*(..))",returning = "result")
+    // 返回通知
     public void afterReturningMethod(JoinPoint joinPoint,Object result){
         String name = joinPoint.getSignature().getName();
         System.out.println("Logger--->返回通知，方法名："+name+" 目标方法的返回结果："+result);
 
     }
 
-    // 异常通知 @AfterThrowing()
-    @AfterThrowing(value = "execution(* anoAop.CalculatorImp.*(..))",throwing = "ex")
+    // 异常通知
     public void afterThrowingMethod(JoinPoint joinPoint, Throwable ex){
         String name = joinPoint.getSignature().getName();
         System.out.println("Logger--->异常通知，方法名："+name+"目标方法的返回结果："+ex);
     }
-    // 环绕通知 @Around()
-    @Around(value = "execution(* anoAop.CalculatorImp.*(..))")
+    // 环绕通知
     public Object aroundMethod(ProceedingJoinPoint joinPoint){
         String name = joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
@@ -71,6 +60,4 @@ public class LogAspect {
         }
         return result;
     }
-    @Pointcut(value = "execution(* anoAop.CalculatorImp.*(..))")
-    public void pointCut(){}
 }
