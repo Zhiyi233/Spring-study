@@ -15,7 +15,7 @@
 
     <aop:config>
         <aop:aspect ref="logAspect">
-            <!--配置切入点-->
+            <!--配置切入点 id名字随便取-->
             <aop:pointcut id="pointcut" expression="execution(* xmlaop.CalculatorImp.*(..))"/>
             <!--配置5种通知类型-->
             <aop:before method="beforeMethod" pointcut-ref="pointcut"></aop:before>

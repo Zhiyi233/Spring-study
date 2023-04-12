@@ -11,6 +11,7 @@
     <modules>
         <module>spring-reflect</module>
         <module>atguigu-spring</module>
+        <module>spring-jdbc-tx</module>
     </modules>
 
     <properties>
