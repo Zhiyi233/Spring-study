@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xmlaop version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:util="http://www.springframework.org/schema/util"
@@ -9,11 +9,11 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- p命名空间注入 -->
-    <bean id="studentp" class="ioc.xml.dimap.Student"
+    <bean id="studentp" class="com.atguigu.ioc.xml.dimap.Student"
     p:sid="003" p:sname="张芮溪" p:courseList-ref="courseList" p:teacherMap-ref="teacherMap">
     </bean>
 
-    <bean id="student" class="ioc.xml.dimap.Student">
+    <bean id="student" class="com.atguigu.ioc.xml.dimap.Student">
         <property name="sid" value="001"></property>
         <property name="sname" value="陈智奕"></property>
 
@@ -47,20 +47,20 @@
         </entry>
     </util:map>
 
-    <bean id="course1" class="ioc.xml.dimap.Course">
+    <bean id="course1" class="com.atguigu.ioc.xml.dimap.Course">
         <property name="courseName" value="java开发"></property>
     </bean>
 
-    <bean id="course2" class="ioc.xml.dimap.Course">
+    <bean id="course2" class="com.atguigu.ioc.xml.dimap.Course">
         <property name="courseName" value="C++开发"></property>
     </bean>
 
-    <bean id="teacher1" class="ioc.xml.dimap.Teacher">
+    <bean id="teacher1" class="com.atguigu.ioc.xml.dimap.Teacher">
         <property name="teacherName" value="陈锋"></property>
         <property name="teacherId" value="1"></property>
     </bean>
 
-    <bean id="teacher2" class="ioc.xml.dimap.Teacher">
+    <bean id="teacher2" class="com.atguigu.ioc.xml.dimap.Teacher">
         <property name="teacherName" value="大年"></property>
         <property name="teacherId" value="2"></property>
     </bean>

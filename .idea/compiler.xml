@@ -11,6 +11,7 @@
         <module name="spring-aop" />
         <module name="spring-jdbc-tx" />
         <module name="spring-reflect" />
+        <module name="spring-jdbc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
       <module name="spring-aop" target="8" />
       <module name="spring-com.atguigu.ioc-first" target="8" />
       <module name="spring-com.atguigu.ioc-xml" target="8" />
+      <module name="spring-jdbc" target="8" />
       <module name="spring-jdbc-tx" target="8" />
       <module name="spring-reflect" target="8" />
     </bytecodeTargetLevel>

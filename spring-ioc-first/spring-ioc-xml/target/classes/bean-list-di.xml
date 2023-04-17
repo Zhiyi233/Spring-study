@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xmlaop version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="emp" class="ioc.xml.ditest.Employee">
+    <bean id="emp" class="com.atguigu.ioc.xml.ditest.Employee">
         <property name="ename" value="kevin"></property>
         <property name="age" value="20"></property>
     </bean>
 
-    <bean id="emp2" class="ioc.xml.ditest.Employee">
+    <bean id="emp2" class="com.atguigu.ioc.xml.ditest.Employee">
         <property name="ename" value="marry"></property>
         <property name="age" value="32"></property>
     </bean>
 
-    <bean id="dept" class="ioc.xml.ditest.Department">
+    <bean id="dept" class="com.atguigu.ioc.xml.ditest.Department">
         <property name="dname" value="行政部"></property>
         <property name="employeeList" >
             <list>

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xmlaop version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="order" class="ioc.xml.scope.Order" scope="prototype"></bean>
+    <bean id="order" class="com.atguigu.ioc.xml.scope.Order" scope="prototype"></bean>
 
-    <bean id="user" class="ioc.xml.User" scope="prototype">
+    <bean id="user" class="com.atguigu.ioc.xml.User" scope="prototype">
         <property name="name" value="kevin"></property>
     </bean>
 </beans>

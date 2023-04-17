@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xmlaop version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--根据类型自动装配-->
-<!--    <bean id="userController" class="ioc.xml.auto.controller.UserController" autowire="byType">-->
-<!--    </bean>-->
-<!--    <bean id="userService" class="ioc.xml.auto.service.UserServiceImpl" autowire="byType">-->
-<!--    </bean>-->
+<!--    <proxy id="userController" class="com.atguigu.ioc.xmlaop.auto.controller.UserController" autowire="byType">-->
+<!--    </proxy>-->
+<!--    <proxy id="userService" class="com.atguigu.ioc.xmlaop.auto.service.UserServiceImpl" autowire="byType">-->
+<!--    </proxy>-->
     <!---byName-->
-    <bean id="userController" class="ioc.xml.auto.controller.UserController" autowire="byName">
+    <bean id="userController" class="com.atguigu.ioc.xml.auto.controller.UserController" autowire="byName">
         </bean>
-        <bean id="userService" class="ioc.xml.auto.service.UserServiceImpl" autowire="byName">
+        <bean id="userService" class="com.atguigu.ioc.xml.auto.service.UserServiceImpl" autowire="byName">
         </bean>
 
-    <bean id="userDao" class="ioc.xml.auto.dao.UserDaoImpl">
+    <bean id="userDao" class="com.atguigu.ioc.xml.auto.dao.UserDaoImpl">
 
     </bean>
 </beans>
