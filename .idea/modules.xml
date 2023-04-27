@@ -3,13 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring-study.iml" filepath="$PROJECT_DIR$/.idea/Spring-study.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-ioc-first/atguigu-spring/atguigu-spring.iml" filepath="$PROJECT_DIR$/spring-ioc-first/atguigu-spring/atguigu-spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-aop/spring-aop.iml" filepath="$PROJECT_DIR$/spring-aop/spring-aop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-ioc-first/spring-com.atguigu.ioc-first.iml" filepath="$PROJECT_DIR$/spring-ioc-first/spring-com.atguigu.ioc-first.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-ioc-first/spring-ioc-xml/spring-com.atguigu.ioc-xml.iml" filepath="$PROJECT_DIR$/spring-ioc-first/spring-ioc-xml/spring-com.atguigu.ioc-xml.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-ioc-first/spring-jdbc/spring-jdbc.iml" filepath="$PROJECT_DIR$/spring-ioc-first/spring-jdbc/spring-jdbc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-ioc-first/spring-jdbc-tx/spring-jdbc-tx.iml" filepath="$PROJECT_DIR$/spring-ioc-first/spring-jdbc-tx/spring-jdbc-tx.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-ioc-first/spring-reflect/spring-reflect.iml" filepath="$PROJECT_DIR$/spring-ioc-first/spring-reflect/spring-reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC-demo1/SpringMVC-demo1.iml" filepath="$PROJECT_DIR$/SpringMVC-demo1/SpringMVC-demo1.iml" />
     </modules>
   </component>
 </project>

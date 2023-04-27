@@ -6,12 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="atguigu-spring" />
-        <module name="spring-com.atguigu.ioc-xml" />
-        <module name="spring-aop" />
-        <module name="spring-jdbc-tx" />
-        <module name="spring-reflect" />
-        <module name="spring-jdbc" />
+        <module name="SpringMVC-demo1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +17,7 @@
       <module name="spring-jdbc" target="8" />
       <module name="spring-jdbc-tx" target="8" />
       <module name="spring-reflect" target="8" />
+      <module name="SpringMVC-demo1" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

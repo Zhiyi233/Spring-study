@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC-demo1" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring-ioc-first/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ioc-first/spring-ioc-xml/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-aop/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ioc-first/spring-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMVC-demo1/pom.xml" />
       </list>
     </option>
   </component>
